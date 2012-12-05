@@ -15,7 +15,6 @@ def find_sequence(start, end):
 			seq += 1
 
 		if seq > longest_sequence:
-			print "Longest so far: ", seq,i
 			longest_sequence = seq
 			number = i
 
@@ -26,8 +25,7 @@ def find_sequence(start, end):
 def get_sequence_size(start):
 	if start in memory:
 		return memory[start]
-
-	if start % 2 == 0:
+	elif start % 2 == 0:
 		memory[start] = 1 + get_sequence_size(int(start / 2))
 	else:
 		memory[start] = 1 + get_sequence_size(int(start * 3 + 1))
