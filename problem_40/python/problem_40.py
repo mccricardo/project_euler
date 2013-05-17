@@ -42,3 +42,5 @@ for i in digits:
 
 print "Second aproach"
 print value
+
+# Find a better solution
