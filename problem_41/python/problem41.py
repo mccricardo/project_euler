@@ -20,7 +20,7 @@ def tupleToNumber(tuple_number):
 	return number
 
 # Naive (brute-force) implementation for prime checking.
-# Because the biggest possible number is 987654321, and it's sqrt approximately 31426
+# Because the biggest possible number is 7654321, and it's sqrt approximately 2766
 # this aproach is not problematic.
 # For more efficient solutions, you can check the link below for guidance:
 #	- http://en.wikipedia.org/wiki/Primality_test
@@ -30,8 +30,13 @@ def isPrime(number):
 			return False
 	return True
 
+
+# A number is divisible by if the sum of it's individual digits is evenly divisible by 3.
+# No need to check 9-length or 8-length numbers because they are divisible by 3.
+# 9+8+7+6+5+4+3+2+1 = 45 % 3 = 0
+# 8+7+6+5+4+3+2+1 = 36 % 3 = 0
+possible_digits = [7,6,5,4,3,2,1]
 digits = 0
-possible_digits = [9,8,7,6,5,4,3,2,1]
 while digits < len(possible_digits):
 	# No need to check if number is pandigital, because only permutations are generated.
 	# Also, numbers are already sorted.
