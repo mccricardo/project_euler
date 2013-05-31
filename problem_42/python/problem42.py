@@ -48,7 +48,7 @@ def word_is_triangle(number_of_word):
 f = open('../words.txt', 'r')
 words =  []
 for i in f.read().split(','):
-	words.append(i.lstrip('"').rstrip('"'))
+	words.append(i.strip('"'))
 f.close()
 
 # Go through all words
