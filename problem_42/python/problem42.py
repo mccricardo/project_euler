@@ -6,7 +6,7 @@
 # 
 #	n = (-b +/- sqrt(b**2 - 4*a*c)) / 2*a
 # 
-# where a = 1(coefficient of n**2), b = -1(coefficient of n**2), and c = -2*tn.
+# where a = 1(coefficient of n**2), b = 1(coefficient of n), and c = -2*tn.
 # Making the appropriate substitutions, we get:
 #	n = (-1 +/- sqrt(1**2 - 4 * 1 * -2*tn)) / 2*1
 #
