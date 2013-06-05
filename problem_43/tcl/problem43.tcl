@@ -14,7 +14,7 @@ proc foreach_permutation {var items body} {
        for {set j 0} {$j < $l} {incr j} {
            foreach_permutation subcomb [lreplace $items $j $j] {
                uplevel [list set $var [concat [lrange $items $j $j] $subcomb]]
-               uplevel $body
+               uplevel $body 
            }
        }
     }
