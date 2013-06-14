@@ -1,5 +1,4 @@
 from sieve_of_atkin import SieveOfAtkin
-from itertools import combinations
 
 # The intended value has to be in the primes list, meaning < limit.
 # The biggest possible sequence will involve the smallest primes that add up
