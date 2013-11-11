@@ -7,7 +7,7 @@ def get_divisors(number):
 
 for i in range(1,  28123):
 	if sum(get_divisors(i)) > i: 
-		abn.add(i)
+		abundant_numbers.add(i)
 	if not any((i-a in abundant_numbers) for a in abundant_numbers):
 		s += i
 
