@@ -8,7 +8,7 @@ var divide_by = [11, 13, 14, 16, 17, 18, 19, 20]
 function find_multiple(step) {
 	var not_found = true;
 	var start = step;
-	
+
 	while (not_found) {		
 		start += step;
 		for (var i in divide_by) {
@@ -23,4 +23,6 @@ function find_multiple(step) {
 	return start;
 }
 
+// Because 2520 is the smallest number divisible by all number from 1..10
+// we can use this number as a start and step.
 console.log(find_multiple(2520));
